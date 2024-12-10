@@ -1,0 +1,94 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+}
+
+nav::before {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(to right, #ff6347, #ff634700);
+    border-bottom-right-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+nav::after {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(to left, #ff6347, #ff634700);
+    border-bottom-right-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+span {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 5px;
+    transition: 0.5s all;
+}
+
+a:hover {
+    color: #ff6347;
+}
+
+.langChanger-barsIcon-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-toggler {
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.language-toggler:hover {
+    color: #ff6347;
+}
+
+.bars-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:750px) {
+    nav {
+        padding: 20px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .bars-icon {
+        display: flex;
+    }
+}
