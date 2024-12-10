@@ -1,13 +1,10 @@
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
-import { useTranslation } from "react-i18next";
-
 import NavBar from "../nav/nav";
 
 import "./cover-styles.css";
 
 const Cover = () => {
-  const [t, i18n] = useTranslation("global");
   return (
     <>
       <NavBar />
@@ -24,9 +21,9 @@ const Cover = () => {
         </div>
         <Logo id="logo" className="animate" />
         <h1>AGUSTÍN ÁLVAREZ</h1>
-        <h2>{t("h2.ocupation")}</h2>
+        <h2>FrontEnd Developer</h2>
         <div className="links-container">
-          <a href="">{t("a.text")}</a>
+          <a href="">View Proyects</a>
         </div>
       </section>
     </>
