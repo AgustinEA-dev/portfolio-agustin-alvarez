@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 import "./cover-styles.css";
@@ -20,7 +22,7 @@ const Cover = () => {
         <h1>AGUSTÍN ÁLVAREZ</h1>
         <h2>FrontEnd Developer</h2>
         <div className="links-container">
-          <a href="">View Proyects</a>
+          <Link to={"/proyects"}>View Proyects</Link>
         </div>
       </section>
     </>
