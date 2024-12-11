@@ -1,13 +1,10 @@
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
-import NavBar from "../nav/nav";
-
 import "./cover-styles.css";
 
 const Cover = () => {
   return (
     <>
-      <NavBar />
       <section className="cover">
         <div className="video-container">
           <video

@@ -1,27 +1,32 @@
-import { ReactComponent as BarsMenu } from "../../assets/bars-icon.svg";
+import { Link, Outlet } from "react-router";
 
-import "./nav-styles.css";
+import { ReactComponent as BarsMenu } from "../../assets/bars-icon.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
+
+import "./navbar-styles.css";
 
 const NavBar = () => {
   return (
     <>
-      <nav>
-        <span>AA-DEV</span>
+      <nav className="navbar">
+        <Link to={"/"}>
+          <Logo className="navbar-logo" />
+        </Link>
         <ul>
           <li className="nav-link">
-            <a className="nav-link" href="">
+            <Link className="nav-link" to={"proyects"}>
               Proyects
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a className="nav-link" href="">
+            <Link className="nav-link" to={"about"}>
               About Me
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a className="nav-link" href="">
+            <Link className="nav-link" to={"contact"}>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="langChanger-barsIcon-container">
@@ -29,6 +34,7 @@ const NavBar = () => {
           <BarsMenu className="bars-icon" />
         </div>
       </nav>
+      <Outlet />
     </>
   );
 };
