@@ -1,7 +1,6 @@
 import { Link, Outlet } from "react-router";
 
 import { ReactComponent as BarsMenu } from "../../assets/bars-icon.svg";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 import "./navbar-styles.css";
 
@@ -10,7 +9,7 @@ const NavBar = () => {
     <>
       <nav className="navbar">
         <Link to={"/"}>
-          <Logo className="navbar-logo" />
+          <span>AA-DEV</span>
         </Link>
         <ul>
           <li className="nav-link">
@@ -29,7 +28,7 @@ const NavBar = () => {
             </Link>
           </li>
         </ul>
-        <div className="langChanger-barsIcon-container">
+        <div className="langChanger-barsIcon-date-container">
           <span className="language-toggler">LANG</span>
           <BarsMenu className="bars-icon" />
         </div>

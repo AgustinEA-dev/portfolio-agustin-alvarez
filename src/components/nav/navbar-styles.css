@@ -42,7 +42,6 @@ ul {
     display: flex;
     align-content: center;
     gap: 40px;
-    margin-right: 15px;
 }
 
 li {
@@ -60,7 +59,7 @@ a:hover {
     color: #ff6347;
 }
 
-.langChanger-barsIcon-container {
+.langChanger-barsIcon-date-container {
     display: flex;
     align-items: center;
     gap: 20px;

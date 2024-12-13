@@ -5,6 +5,7 @@ import { ReactComponent as Logo } from "../../assets/logo.svg";
 import "./cover-styles.css";
 
 const Cover = () => {
+  let date = Date();
   return (
     <>
       <section className="cover">
@@ -21,8 +22,11 @@ const Cover = () => {
         <Logo id="logo" className="animate" />
         <h1>AGUSTÍN ÁLVAREZ</h1>
         <h2>FrontEnd Developer</h2>
-        <div className="links-container">
-          <Link to={"/proyects"}>View Proyects</Link>
+        <div className="link-container">
+          <Link className="proyects-link" to={"/proyects"}>
+            View Proyects
+          </Link>
+          <div className="date-container">- {date.slice(0, 15)} -</div>
         </div>
       </section>
     </>

@@ -31,7 +31,7 @@
 
 #logo {
     width: 30vw;
-    margin-top: 50px;
+    margin-top: 80px;
     stroke-width: 2px;
     stroke-dasharray: 2000px;
     animation: 3s ease-in-out drawLogo;
@@ -97,13 +97,26 @@ h2 {
     }
 }
 
-.links-container {
+.link-container {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     gap: 20px;
 }
 
-a {
-    font-size: 15px;
+.date-container {
+    font-size: 12px;
+    font-family: "Share Tech Mono", monospace;
+    color: #ffffff;
+    animation: 1s ease-in-out fadeInUp;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.proyects-link {
+    font-size: 17px;
     text-decoration: none;
     color: #ffffff;
     animation: 1s ease-in-out fadeInUp;
@@ -111,7 +124,7 @@ a {
 
 @keyframes fadeInUp {
     from {
-        transform: translateY(50px);
+        transform: translateY(30px);
         opacity: 0;
     }
 
@@ -143,12 +156,20 @@ a {
         font-size: 20px;
     }
 
+    .date-container {
+        position: initial;
+    }
+
 }
 
 @media(max-width:350px) {
 
     #logo {
         width: 70vw;
+    }
+
+    .link-container {
+        flex-direction: column;
     }
 
 }
@@ -159,8 +180,10 @@ a {
         width: 70vw;
     }
 
-    h1{
+    h1 {
         font-size: 30px;
     }
+
+
 
 }
