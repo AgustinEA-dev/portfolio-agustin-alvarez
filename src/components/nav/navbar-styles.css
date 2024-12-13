@@ -9,7 +9,7 @@ nav {
 
 nav::before {
     content: "";
-    width: 40%;
+    width: 35%;
     height: 2px;
     background: linear-gradient(to right, #ff6347, #ff634700);
     border-bottom-right-radius: 100%;
@@ -21,7 +21,7 @@ nav::before {
 
 nav::after {
     content: "";
-    width: 40%;
+    width: 35%;
     height: 2px;
     background: linear-gradient(to left, #ff6347, #ff634700);
     border-bottom-right-radius: 100%;
@@ -42,6 +42,7 @@ ul {
     display: flex;
     align-content: center;
     gap: 40px;
+    margin-right: 30px;
 }
 
 li {
@@ -82,16 +83,20 @@ a:hover {
     display: none;
 }
 
-@media(max-width:750px) {
-    nav {
-        padding: 20px;
-    }
-
+@media(max-width:850px) {
     ul {
         display: none;
     }
 
     .bars-icon {
         display: flex;
+    }
+
+    nav::before {
+        width: 25%;
+    }
+
+    nav::after {
+        width: 25%;
     }
 }

@@ -30,7 +30,7 @@
 }
 
 #logo {
-    width: 30vw;
+    width: 70vw;
     margin-top: 80px;
     stroke-width: 2px;
     stroke-dasharray: 2000px;
@@ -52,12 +52,11 @@
 h1 {
     width: 100%;
     font-size: 40px;
-    font-family: "Abril Fatface", serif;
-    font-weight: lighter;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: bold;
     letter-spacing: 10px;
     margin: 50px 0 10px;
     color: #ffffff;
-    position: relative;
     text-align: center;
     animation: 1s ease-in-out fadeInLeft;
 }
@@ -132,14 +131,6 @@ h2 {
         transform: translateY(0);
         opacity: 1
     }
-}
-
-@media(max-width:750px) {
-
-    #logo {
-        width: 70vw;
-    }
-
 }
 
 @media(max-width:550px) {
