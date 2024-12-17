@@ -1,20 +1,13 @@
 .proyects {
     width: 100%;
     min-height: 100vh;
-    display: flex;
-}
-
-.proyects-container {
-    width: 100%;
-    height: 90dvh;
-    background: linear-gradient(to bottom, #0e0d27 75%, #0e0d2700)
 }
 
 .proyects-video-container {
     width: 100%;
-    height: 50dvh;
+    height: 100dvh;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
     background-color: #0e0d27;
     overflow: hidden;
@@ -34,20 +27,28 @@
 }
 
 .proyects-h1 {
-    width: 100%;
-    font-size: 40px;
-    font-family: "Share Tech Mono", monospace;
-    font-weight: bold;
-    letter-spacing: 10px;
-    margin: 50px 0 0px;
-    color: #ffffff;
+    position: absolute;
     text-align: center;
-    animation: 1s ease-in-out fadeInLeft;
 }
 
+.proyects-container {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-container,
+.proyect-title-container {
+    width: 40%;
+    height: 70dvh;
+    border: 1px solid #ffffff2c;
+    margin-top: 50px;
+}
 
 @media(max-width:550px) {
     .proyects-h1 {
-        font-size: 30px;
+        top: 100px;
     }
 }
