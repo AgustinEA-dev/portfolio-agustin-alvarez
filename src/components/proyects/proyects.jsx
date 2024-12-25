@@ -10,15 +10,15 @@ import "./proyects-styles.css";
 
 const Proyects = () => {
   const [selectedId, setSelectedId] = useState(null);
-  const [isHovered, setIshovered] = useState(false);
+  // const [isHovered, setIshovered] = useState(false);
 
   const handleMouseEnter = (id) => {
-    setIshovered(true);
+    // setIshovered(true);
     setSelectedId(id);
   };
 
   const handleMouseLeave = () => {
-    setIshovered(false);
+    // setIshovered(false);
     setSelectedId(null);
   };
 
@@ -39,13 +39,16 @@ const Proyects = () => {
           <h2>PROYECTS</h2>
           {proyects.map((proyect) => (
             <>
-              <h3
+              <a
+                href={proyect.urlVercel}
+                target="_blank"
+                rel="noreferrer"
                 key={proyect.id}
                 onMouseEnter={() => handleMouseEnter(proyect.id)}
                 onMouseLeave={() => handleMouseLeave()}
               >
                 {proyect.name}
-              </h3>
+              </a>
             </>
           ))}
         </div>
