@@ -8,26 +8,28 @@ const NavBar = () => {
   return (
     <>
       <nav className="navbar">
-        <Link to={"/"}>
-          <span>AA-DEV</span>
-        </Link>
-        <ul>
-          <li className="nav-link">
-            <Link className="nav-link" to={"proyects"}>
-              Proyects
-            </Link>
-          </li>
-          <li className="nav-link">
-            <Link className="nav-link" to={"about"}>
-              About Me
-            </Link>
-          </li>
-          <li className="nav-link">
-            <Link className="nav-link" to={"contact"}>
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <div className="logo-ul-container">
+          <Link to={"/"}>
+            <span>AA-DEV</span>
+          </Link>
+          <ul>
+            <li className="nav-link">
+              <Link className="nav-link" to={"proyects"}>
+                Proyects
+              </Link>
+            </li>
+            <li className="nav-link">
+              <Link className="nav-link" to={"about"}>
+                About Me
+              </Link>
+            </li>
+            <li className="nav-link">
+              <Link className="nav-link" to={"contact"}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div className="langChanger-barsIcon-date-container">
           <span className="language-toggler">LANG</span>
           <BarsMenu className="bars-icon" />

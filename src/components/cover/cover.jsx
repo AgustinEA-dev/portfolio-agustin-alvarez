@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { ReactComponent as Logo } from "../../assets/logo2.svg";
 
-import { ReactComponent as Logo } from "../../assets/logo.svg";
+import BackgroundVideo from "../background-video/video";
+import H2 from "../h2/h2";
 
 import "./cover-styles.css";
 
@@ -9,19 +11,10 @@ const Cover = () => {
   return (
     <>
       <section className="cover">
-        <div className="video-container">
-          <video
-            autoPlay
-            muted
-            loop
-            id="video"
-            src="keyboard1.mp4"
-            type="keyboard"
-          ></video>
-        </div>
+        <BackgroundVideo />
         <Logo id="logo" className="animate" />
         <h1>AGUSTÍN ÁLVAREZ</h1>
-        <h2>FrontEnd Developer</h2>
+        <H2 innerText="Front-End Developer" />
         <div className="link-container">
           <Link className="proyects-link" to={"/proyects"}>
             View Proyects

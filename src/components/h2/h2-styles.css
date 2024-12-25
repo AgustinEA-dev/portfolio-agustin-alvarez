@@ -1,0 +1,10 @@
+h2 {
+    width: 100%;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    animation: 1s ease-in-out fadeInRight;
+}

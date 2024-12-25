@@ -4,12 +4,13 @@ nav {
     justify-content: space-between;
     width: 100%;
     padding: 20px;
+    gap: 20px;
     position: fixed;
 }
 
 nav::before {
     content: "";
-    width: 35%;
+    width: 45%;
     height: 2px;
     background: linear-gradient(to right, #ff6347, #ff634700);
     border-bottom-right-radius: 100%;
@@ -19,7 +20,7 @@ nav::before {
     transition: 0.5s;
 }
 
-nav::after {
+/* nav::after {
     content: "";
     width: 35%;
     height: 2px;
@@ -29,6 +30,11 @@ nav::after {
     bottom: 0;
     right: 0;
     transition: 0.5s;
+} */
+
+.logo-ul-container{
+    display: flex;
+    gap: 100px;
 }
 
 .navbar-logo {
@@ -42,7 +48,7 @@ ul {
     display: flex;
     align-content: center;
     gap: 40px;
-    margin-right: 35px;
+    /* margin-right: 35px; */
 }
 
 li {
@@ -57,7 +63,7 @@ a {
 }
 
 a:hover {
-    color: #ff6347;
+    color:  #ff6347;
 }
 
 .langChanger-barsIcon-date-container {
@@ -70,6 +76,7 @@ a:hover {
     cursor: pointer;
     transition: 0.5s all;
     color: white;
+    font-size: 15px;
 }
 
 .language-toggler:hover {
