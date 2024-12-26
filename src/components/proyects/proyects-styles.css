@@ -1,31 +1,41 @@
 .proyects {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
-    padding: 240px 0 0;
 }
 
 .preview-container {
     width: 50%;
     height: 100dvh;
+    padding: 240px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@keyframes enter-left {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 50%;
+    }
 }
 
 .titles-container {
     width: 50%;
     height: 100dvh;
+    padding: 240px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .proyects h2 {
-    width: 100%;
     font-size: 5vw;
     font-weight: bold;
     font-family: "Share Tech Mono", monospace;
@@ -52,7 +62,6 @@
 
     .titles-container {
         width: 100%;
-        padding: 0;
     }
 
     .proyects h2 {
