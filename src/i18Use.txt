@@ -1,0 +1,25 @@
+// src/App.js
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+function App() {
+  const { t, i18n } = useTranslation();
+  
+  // Función para cambiar el idioma
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
+  return (
+    <div style={{ padding: '20px' }}>
+      <h1>{t('welcome')}</h1>
+      <p>{t('description')}</p>
+
+      {/* Botones para cambiar de idioma */}
+      <button onClick={() => changeLanguage('en')}>English</button>
+      <button onClick={() => changeLanguage('es')}>Español</button>
+    </div>
+  );
+}
+
+export default App;

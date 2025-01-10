@@ -1,0 +1,46 @@
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 100dvh;
+  background-color: #000000;
+
+  .about-title {
+    padding-top: 50px;
+    width: 80%;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .about-subtitle {
+    width: 80%;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .description {
+    width: 70%;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  .habilities-list {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: white;
+  }
+}
